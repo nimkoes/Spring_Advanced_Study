@@ -51,10 +51,10 @@ public class FieldLogTrace implements LogTrace {
             log.info("[{}] {}{} time={}ms ex={}", traceId.getId(), addSpace(EX_PREFIX, traceId.getLevel()), status.getMessage(), resultTimeMs, e.toString());
         }
 
-        releaceTraceId();
+        releaseTraceId();
     }
 
-    private void releaceTraceId() {
+    private void releaseTraceId() {
         if (traceIdHolder.isFirstLevel()) {
             traceIdHolder = null;    // destroy
         } else {
