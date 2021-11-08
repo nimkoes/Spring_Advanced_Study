@@ -1,6 +1,7 @@
 package hello.proxy;
 
 import hello.proxy.config.v1_proxy.ConcreteProxyConfig;
+import hello.proxy.config.v2_dynamicproxy.DynamicProxyBasicConfig;
 import hello.proxy.trace.logtrace.LogTrace;
 import hello.proxy.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;
@@ -11,7 +12,8 @@ import org.springframework.context.annotation.Import;
 //@Import({AppV1Config.class})    // base package 안에 없는 설정파일
 //@Import({AppV1Config.class, AppV2Config.class})
 //@Import({InterfaceProxyConfig.class})
-@Import({ConcreteProxyConfig.class})
+//@Import({ConcreteProxyConfig.class})
+@Import({DynamicProxyBasicConfig.class})
 @SpringBootApplication(scanBasePackages = "hello.proxy.app")
 public class ProxyApplication {
 
