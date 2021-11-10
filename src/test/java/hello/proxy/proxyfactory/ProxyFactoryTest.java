@@ -20,6 +20,13 @@ public class ProxyFactoryTest {
     void interfaceProxy() {
         ServiceInterface target = new ServiceImpl();
         ProxyFactory proxyFactory = new ProxyFactory(target);
+
+        /**
+         * addAdvisor 를 하지 않고 addAdvice 를 해도 되었던 이유는
+         * addAdvice 안에서 advice (지금의 경우 new TimeAdvice()) 의 타입을 검사하여
+         * IntroductionInfo 또는 DynamicIntroductionAdvice 타입이 아니면
+         * DefaultPointcutAdvisor 타입의 Advisor 를 생성하여 advisor 에 추가하도록 되어있다.
+         */
         proxyFactory.addAdvice(new TimeAdvice());
         ServiceInterface proxy = (ServiceInterface) proxyFactory.getProxy();
         log.info("targetClass={}", target.getClass());
