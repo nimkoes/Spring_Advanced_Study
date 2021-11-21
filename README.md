@@ -1,5 +1,5 @@
 
-# 웹 백엔드 개발 스터디
+# 스프링 핵심 원리 - 고급편
 　  
 ### **inflearn 강의를 들으면서 작성한 예제 코드**
 　  
@@ -21,7 +21,9 @@
 포기하지 않고 이 강의를 끝까지 따라오시면 여러분은 개발자로서 엄청난 내공 상승을 경험하고 누구보다 자신있게 스프링을 사용하실 수 있게 됩니다.  
 어려운 내용이니만큼 저도 철저하게 강의를 준비했습니다. 여러분이 이 내용들을 본인 것으로 완성할 수 있게 도와드리겠습니다.  
 　  
-　  
+
+![Certificates_013](https://github.com/nimkoes/nimkoes.github.io/blob/master/assets/img/aboutme/certificates_013.png?raw=true "certificates_013"){: width="210px"}
+
 
 [link_001_lecture_url]:https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B3%A0%EA%B8%89%ED%8E%B8#
 
